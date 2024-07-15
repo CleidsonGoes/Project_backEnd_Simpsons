@@ -1,0 +1,11 @@
+services:
+  node:
+    build: .
+    container_name: review
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    working_dir: /app
+    tty: true
+    stdin_open: true
