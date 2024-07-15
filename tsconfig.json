@@ -5,7 +5,7 @@
     "rootDir": "./",
     "outDir": "./dist",
     "allowJs": true,
-    "moduleResolution": "Node10",
+    "moduleResolution": "node",
     "types": ["@types/jest",],
     "resolveJsonModule": true,
     "esModuleInterop": true,
