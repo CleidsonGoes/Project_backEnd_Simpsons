@@ -1,4 +1,6 @@
 import express from 'express';
+import * as routers from './routes';
+
 
 const app = express();
 
@@ -6,5 +8,9 @@ const app = express();
 app.get('/health', (req, res) => {
     res.send('Hello world')
 })
+
+app.use('/characters', routers.characterRouter);
+app.use('/casts', routers.castRouter);
+app.use('/castCharacters', routers.castCharacterRouter);
 
 export default app;
