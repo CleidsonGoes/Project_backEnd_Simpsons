@@ -8,7 +8,10 @@
     "build": "tsc",
     "lint": "eslint . --ext .ts",
     "dev": "ts-node-dev src/server.ts",
-    "start": "node dist/src/server.js"
+    "start": "node dist/src/server.js",
+    "test": "jest tests --runInBand",
+    "test:unit": "jest tests/unit",
+    "test:integration": "jest tests/integration --runInBand"
   },
   "keywords": [],
   "author": "",
