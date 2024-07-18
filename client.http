@@ -1,1 +1,13 @@
+###
 GET http://localhost:3000/health
+###
+GET http://localhost:3000/casts
+###
+GET http://localhost:3000/casts/8
+###
+POST http://localhost:3000/casts/
+Content-Type: application/json
+
+{
+    "name": "Gessica Graciele"
+}

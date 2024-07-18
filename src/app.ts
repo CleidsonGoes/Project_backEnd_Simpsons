@@ -5,6 +5,8 @@ import BaseHTTPError from './errors/httpError';
 
 const app = express();
 
+app.use(express.json());
+
 // 1° endpoint com método get
 app.get('/health', (req, res) => {
     res.send('Hello world')
