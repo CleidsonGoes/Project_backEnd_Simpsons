@@ -7,47 +7,48 @@ const dropQuery = readQueries('dropDatabase.sql');
 
 const casts = [
     {
-      "id": 1,
-      "name": "Homer Simpson"
+      'id': 1,
+      'name': 'Homer Simpson'
     },
     {
-      "id": 2,
-      "name": "Marge Simpson"
+      'id': 2,
+      'name': 'Marge Simpson'
     },
     {
-      "id": 3,
-      "name": "Bart Simpson"
+      'id': 3,
+      'name': 'Bart Simpson'
     },
     {
-      "id": 4,
-      "name": "Lisa Simpson"
+      'id': 4,
+      'name': 'Lisa Simpson'
     },
     {
-      "id": 5,
-      "name": "Maggie Simpson"
+      'id': 5,
+      'name': 'Maggie Simpson'
     },
     {
-      "id": 6,
-      "name": "Ned Flanders"
+      'id': 6,
+      'name': 'Ned Flanders'
     },
     {
-      "id": 7,
-      "name": "Mr. Burns"
+      'id': 7,
+      'name': 'Mr. Burns'
     },
     {
-      "id": 8,
-      "name": "Principal Skinner"
+      'id': 8,
+      'name': 'Principal Skinner'
     },
     {
-      "id": 9,
-      "name": "Krusty the Clown"
+      'id': 9,
+      'name': 'Krusty the Clown'
     },
     {
-      "id": 10,
-      "name": "Milhouse Van Houten"
+      'id': 10,
+      'name': 'Milhouse Van Houten'
     }
   ]
 
+// eslint-disable-next-line max-lines-per-function
 describe('Cast', () => {
   beforeEach(async () => {
     await executeQueries(connection, dropQuery);
